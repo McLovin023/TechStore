@@ -1,0 +1,55 @@
+.app-layout {
+  display: flex;
+  gap: 18px;
+  min-height: 700px;
+  padding: 20px;
+  background: linear-gradient(135deg, #b9d8e8, #ecc9db);
+}
+
+.sidebar {
+  flex: 0 0 220px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(24px);
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+}
+
+.inventory-panel {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(24px);
+}
+
+.logo{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 35px;
+    margin-bottom: 15px;  
+}
+.estado_de_la_tienda{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    
+
+
+}
+

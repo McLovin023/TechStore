@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="stilosinventsario.css">
+    <title>TechStore</title>
 </head>
 <body>
+    <div class="app-layout">
+  <aside class="sidebar">
+    <div class="logo">
+        <img src="" alt="logo">
+        <h2>TECH STORE</h2>
+    </div>
+    <div class="estado_de_la_tienda">
+        <h3> TechStore</h3>
+        <button>cambiar</button>
+    </div>
+    
+
+    <nav class="botones">
+      <button>Inicio</button>
+      <button>Inventario</button>
+      <button>Ventas</button>
+      <button>Clientes</button>
+      <button>Reportes</button>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <section class = "cuadro superior">
+          <h1>Gestión de Inventario</h1>
+          <p>Administra productos, precios y existencias.</p>
+          <button>Agregar Producto</button>
+          <button>Quitar Ultimo</button>
+    </section>
+
+    <section class="inventory-panel">
+      <input type="search" placeholder="Buscar producto o código">
+    
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Unidades</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="lista-productos"></tbody>
+      </table>
+    </section>
+  </main>
+</div>
     
 </body>
 </html>
