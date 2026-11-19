@@ -20,29 +20,49 @@
     
 
     <nav class="botones">
-      <button>Inicio</button>
-      <button>Inventario</button>
-      <button>Ventas</button>
-      <button>Clientes</button>
-      <button>Reportes</button>
-    </nav>
+  <button>
+    <span class="texto">Inicio</span>
+  </button>
+
+  <button>
+    <span class="texto">Inventario</span>
+    <span class="contador" id="contador-inventario">0</span>
+  </button>
+
+  <button>
+    <span class="texto">Ventas</span>
+    <span class="contador rosado">2</span>
+  </button>
+
+  <button>
+    <span class="texto">Clientes</span>
+  </button>
+
+  <button>
+    <span class="texto">Reportes</span>
+  </button>
+  </nav>
   </aside>
 
   <main class="main-content">
-    <section class = "cuadro superior">
+    <section class = "cuadro_superior">
+        <div class = "info_superior">
           <h1>Gestión de Inventario</h1>
           <p>Administra productos, precios y existencias.</p>
+        </div>
+        <div class="botones_inventario">
           <button>Agregar Producto</button>
           <button>Quitar Ultimo</button>
+        </div>
     </section>
 
     <section class="inventory-panel">
-      <input type="search" placeholder="Buscar producto o código">
+      <input  class="barra_buscar"type="search" placeholder="Buscar producto o código">
     
       <table>
         <thead>
           <tr>
-            <th>Código</th>
+            <th>Código</th> 
             <th>Producto</th>
             <th>Precio</th>
             <th>Unidades</th>
@@ -51,6 +71,7 @@
         </thead>
         <tbody id="lista-productos"></tbody>
       </table>
+      
     </section>
   </main>
 </div>

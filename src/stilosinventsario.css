@@ -21,6 +21,24 @@
   padding: 24px;
 }
 
+.cuadro_superior{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 22px;
+  margin-bottom: 35px;
+  padding-right: 35px;
+
+}
+.info_superior{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
 .inventory-panel {
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -43,13 +61,81 @@
 
 }
 
-.botones{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    
-    
-
-
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
+.botones button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: none;
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.botones button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: none;
+  box-shadow: none;
+}
+
+/* Botón activo: tarjeta blanca */
+.botones button.activo {
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.1);
+}
+
+/* Íconos */
+.botones svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* El texto ocupa el espacio libre y empuja el contador a la derecha */
+.botones .texto {
+  flex: 1;
+}
+
+.contador {
+  min-width: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contador.rosado {
+  background: #ffe4e6;
+  color: #be123c;
+}
+
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+}
