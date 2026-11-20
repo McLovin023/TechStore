@@ -9,13 +9,15 @@
 <body>
     <div class="app-layout">
   <aside class="sidebar">
-    <div class="logo">
-        <img src="" alt="logo">
-        <h2>TECH STORE</h2>
-    </div>
-    <div class="estado_de_la_tienda">
-        <h3> TechStore</h3>
-        <button>cambiar</button>
+    <div class="tienda-card">
+      <div class="logo">
+          <img src="" alt="logo">
+          <h2>TECH STORE</h2>
+      </div>
+      <div class="estado_de_la_tienda">
+          <h3>TechStore</h3>
+          <button class="cambiador_de_estado"><span >cambiar</span></button>
+      </div>
     </div>
     
 
@@ -52,12 +54,18 @@
         </div>
         <div class="botones_inventario">
           <button>Agregar Producto</button>
-          <button>Quitar Ultimo</button>
+          <button class="botones_inventario2">Quitar Ultimo</button>
         </div>
     </section>
 
     <section class="inventory-panel">
-      <input  class="barra_buscar"type="search" placeholder="Buscar producto o código">
+      <div class="buscador">
+        <svg class="icono_busqueda" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m16 16 4 4"></path>
+        </svg>
+        <input class="barra_buscar" type="search" placeholder="Buscar producto o código">
+      </div>
     
       <table>
         <thead>
@@ -67,6 +75,7 @@
             <th>Precio</th>
             <th>Unidades</th>
             <th>Estado</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody id="lista-productos"></tbody>

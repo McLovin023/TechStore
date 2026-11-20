@@ -47,18 +47,42 @@
   backdrop-filter: blur(24px);
 }
 
-.logo{
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-    padding-top: 35px;
-    margin-bottom: 15px;  
+.tienda-card {
+  margin-bottom: 24px;
+  padding: 18px;
+  border-radius: 20px;
+  background-color: white;
 }
-.estado_de_la_tienda{
-    display: flex;
-    gap: 50px;
-    margin-bottom: 50px;
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.logo h2,
+.estado_de_la_tienda h3 {
+  margin: 0;
+}
+
+.estado_de_la_tienda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.estado_de_la_tienda button.cambiador_de_estado{
+  background-color: rgb(226, 222, 222);
+  border-radius: 12px;
+  height: 35px;
+  border: 0;
+}
+
+.estado_de_la_tienda button.cambiador_de_estado:hover{
+  box-shadow: 0px 4px 6px rgb(53, 52, 52);
 }
 
 .botones {
@@ -138,4 +162,67 @@ th,
 td {
   padding: 12px 16px;
   text-align: left;
+}
+
+.buscador {
+  position: relative;
+  width: min(500px, 100%);
+  margin-bottom: 15px;
+}
+
+.icono_busqueda {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  fill: none;
+  stroke: #cbd5e1;
+  stroke-width: 2;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.barra_buscar {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px 0 42px;
+  border: 1px solid #f9a8c4;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  color: #334155;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.18);
+}
+
+.barra_buscar::placeholder {
+  color: #94a3b8;
+}
+.barra_buscar:focus {
+  border-color: #f4729b;
+  box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.25);
+}
+
+.botones_inventario button{
+  background-color: #be123c;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px;
+  color: white;
+
+}
+.botones_inventario button:hover {
+  box-shadow: 0 4px 12px #d67157;
+}
+
+.botones_inventario button.botones_inventario2 {
+  background-color: white;
+  color: #334155;
+  border: 0px solid #be123c;
+}
+
+.botones_inventario button.botones_inventario2:hover {
+  box-shadow: 0 4px 12px #3d3d3c;
 }
